@@ -1,0 +1,122 @@
+## Flood Level
+python3 main.py --save_path ./res110/Flood/cifar100/$flood_level/1 --data cifar100 -b $flood_level
+python3 main.py --save_path ./res110/Flood/cifar100/0.11/4 --data cifar100 --epochs 500 --b 0.11
+python3 main.py --save_path ./res110/Flood/cifar10/0.04/ --data cifar10 --epochs 500 --b 0.04
+
+## Baseline
+python3 main.py --save_path ./res110/baseline/cifar100/1 --data cifar100 --epochs 500
+
+## CRL
+python3 main.py --save_path ./res110/CRL/cifar100/1 --data cifar100 --rank_weight 1.0 --epochs 500
+
+##JI_conf
+python3 main.py --save_path ./res110/JI/cifar100/0.11/4 --data cifar100 --ji_conf --epochs 500 --b 0.11 --cal Conf
+
+## JI_acc_conf
+python3 main.py --save_path ./res110/JI_acc_conf/cifar10/0.04/ --data cifar10 --loss CRL --ji_acc_conf --b 0.04 --epochs 300 --cal Conf
+
+## JI_wj
+python3 main.py --save_path ./res110/JI_wj/temp --data cifar100 --ji_wj 1.0 --b 0.11 --loss CRL
+
+## JI_sort_acc_conf
+python3 main.py --save_path ./res110/JI_sort/cifar100/0.11/ --data cifar100 --loss CRL --sort --ji_acc_conf --b 0.11 --epochs 500 --cal Conf --sort_mode 0
+
+## JI_sort_1_conf
+python3 main.py --save_path ./res110/JI_sort/cifar100/0.11/ --data cifar100 --loss CRL --sort --ji_conf --b 0.11 --epochs 500 --cal Conf --sort_mode 1
+
+## 1/conf
+python3 main.py --data cifar100 --loss CRL --minus_1_conf --sort --sort_mode 0 --mode 0 --b 0.22 --epochs 500 --cal Conf
+
+## batch-wised : --mode 0
+## sample-wised : --mode 1
+
+## sort_acc_conf: --sort_mode 0
+## sort_conf : --sort_mode 1
+## sort_acc_conf_ascend : --sort_mode 2
+## sort_conf_ascend : --sort_mode 3
+
+python3 main.py --save_path ./res110/JI_sort/3(1-conf)/cifar10/0.04/1 --data cifar10 --loss CRL --sort --ji_conf --b 0.04 --epochs 500 --cal Conf
+
+python3 main.py --save_path ./res110/JI/cifar10/3(1-conf)/0.04/1 --data cifar10 --ji_conf --epochs 500 --b 0.04 --cal Conf
+
+python3 main.py --data cifar100 --loss CRL --minus_1_conf --mode 0 --b 0.22 --epochs 500 --cal Conf
+
+## 0.22 ###
+## v1  --> 아직 안 함
+python3 main.py --data cifar100 --loss CRL --minus_1_conf --mode 0 --b 0.22 --epochs 500 --cal Conf
+
+
+## v2
+python3 main.py --data cifar100 --loss CRL --minus_1_conf --mode 1 --b 0.22 --epochs 500 --cal Conf
+
+
+## v3
+python3 main.py --data cifar100 --loss CRL --minus_1_conf --sort --sort_mode 1 --mode 0 --b 0.22 --epochs 500 --cal Conf
+
+
+## v4
+python3 main.py --data cifar100 --loss CRL --minus_1_conf --sort --sort_mode 3 --mode 0 --b 0.22 --epochs 500 --cal Conf
+
+
+## v6
+python3 main.py --data cifar100 --loss CRL --minus_1_conf --sort --sort_mode 0 --mode 0 --b 0.22 --epochs 500 --cal Conf
+
+
+## v7
+python3 main.py --data cifar100 --loss CRL --minus_1_conf --sort --sort_mode 2 --mode 0 --b 0.22 --epochs 500 --cal Conf
+
+
+## v8
+python3 main.py --data cifar100 --loss CRL --minus_1_conf --sort --sort_mode 1 --mode 1 --b 0.22 --epochs 500 --cal Conf
+
+
+## v9
+python3 main.py --data cifar100 --loss CRL --minus_1_conf --sort --sort_mode 3 --mode 1 --b 0.22 --epochs 500 --cal Conf
+
+
+## v10
+python3 main.py --data cifar100 --loss CRL --minus_1_conf --sort --sort_mode 0 --mode 1 --b 0.22 --epochs 500 --cal Conf
+
+## v11
+python3 main.py --data cifar100 --loss CRL --minus_1_conf --sort --sort_mode 2 --mode 1 --b 0.22 --epochs 500 --cal Conf
+
+##########################################3
+
+## 0.11 ###
+## v1
+python3 main.py --data cifar100 --loss CRL --minus_1_conf --mode 0 --b 0.11 --epochs 2 --cal Conf
+
+
+## v2
+python3 main.py --data cifar100 --loss CRL --minus_1_conf --mode 1 --b 0.11 --epochs 500 --cal Conf
+
+
+## v3
+python3 main.py --data cifar100 --loss CRL --minus_1_conf --sort --sort_mode 1 --mode 0 --b 0.11 --epochs 500 --cal Conf
+
+
+## v4
+python3 main.py --data cifar100 --loss CRL --minus_1_conf --sort --sort_mode 3 --mode 0 --b 0.11 --epochs 500 --cal Conf
+
+
+## v5
+python3 main.py --data cifar100 --loss CRL --minus_1_conf --sort --sort_mode 0 --mode 0 --b 0.11 --epochs 500 --cal Conf
+
+
+## v6
+python3 main.py --data cifar100 --loss CRL --minus_1_conf --sort --sort_mode 2 --mode 0 --b 0.11 --epochs 500 --cal Conf
+
+
+## v7
+python3 main.py --data cifar100 --loss CRL --minus_1_conf --sort --sort_mode 1 --mode 1 --b 0.11 --epochs 500 --cal Conf
+
+
+## v8
+python3 main.py --data cifar100 --loss CRL --minus_1_conf --sort --sort_mode 3 --mode 1 --b 0.11 --epochs 500 --cal Conf
+
+
+## v9
+python3 main.py --data cifar100 --loss CRL --minus_1_conf --sort --sort_mode 0 --mode 1 --b 0.11 --epochs 500 --cal Conf
+
+## v10
+python3 main.py --data cifar100 --loss CRL --minus_1_conf --sort --sort_mode 2 --mode 1 --b 0.11 --epochs 500 --cal Conf
